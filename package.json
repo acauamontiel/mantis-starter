@@ -1,0 +1,57 @@
+{
+  "name": "mantis-starter",
+  "version": "0.1.0",
+  "description": "A modern kick-starter for front-end development packed with well-chosen tools",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:mantis-stack/mantis-starter.git"
+  },
+  "keywords": [
+    "template",
+    "boilerplate",
+    "skeleton",
+    "scaffold",
+    "starter"
+  ],
+  "author": "Acauã Montiel <contato@acauamontiel.com.br>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-core": "^6.7.4",
+    "babel-eslint": "^6.0.2",
+    "babel-preset-es2015": "^6.6.0",
+    "babelify": "^7.2.0",
+    "browser-sync": "^2.11.2",
+    "browserify": "^13.0.0",
+    "del": "^2.2.0",
+    "gulp": "^3.9.1",
+    "gulp-changed": "^1.3.0",
+    "gulp-data": "^1.2.1",
+    "gulp-eslint": "^2.0.0",
+    "gulp-if": "^2.0.0",
+    "gulp-imagemin": "^2.4.0",
+    "gulp-jade": "^1.1.0",
+    "gulp-load-plugins": "^1.2.0",
+    "gulp-newer": "^1.1.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-size": "^2.1.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-stylus": "^2.3.1",
+    "gulp-svg-symbols": "^1.0.0",
+    "gulp-uglify": "^1.5.3",
+    "gulp-watch": "^4.3.5",
+    "mantis-equalizr": "^1.0.0",
+    "mantis-grid": "^0.4.2",
+    "mantis-layers": "^0.1.0",
+    "mantis-querist": "^0.5.0",
+    "nib": "^1.1.0",
+    "run-sequence": "^1.1.5",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}

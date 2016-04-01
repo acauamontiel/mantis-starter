@@ -1,0 +1,15 @@
+{
+  "name": "mantis-starter",
+  "version": "0.1.0",
+  "authors": [
+    "Acauã Montiel <contato@acauamontiel.com.br>"
+  ],
+  "description": "A modern kick-starter for front-end development packed with well-chosen tools",
+  "main": "gulpfile.js",
+  "keywords": [
+    "template"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/mantis-stack/mantis-starter",
+  "private": true
+}

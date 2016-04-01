@@ -1,0 +1,24 @@
+/*
+ * General Styles
+ */
+
++selection()
+	color $body-color
+	background $body-bg
+
+body
+	color $body-color
+	background $body-bg url('../img/backgrounds/mantis-mobile.jpg') center center no-repeat
+	background-size cover
+
+	@media $from.lg
+		background-image url('../img/backgrounds/mantis.jpg')
+
+h1
+	animation $transition-slow fadeInRight
+
+h2
+	animation $transition-slow fadeInLeft
+
+p
+	animation $transition-slow fadeInUp

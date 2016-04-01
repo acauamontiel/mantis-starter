@@ -1,0 +1,113 @@
+{
+	"env": {
+		"browser": true,
+		"es6": true
+	},
+	"globals": {
+		"$": true,
+		"Mantis": true
+	},
+	"ecmaFeatures": {
+		"modules": true
+	},
+	"parser": "babel-eslint",
+	"rules": {
+		"eol-last": [
+			1,
+			"unix"
+		],
+		"generator-star-spacing": [
+			1,
+			{
+				"after": false,
+				"before": true
+			}
+		],
+		"block-spacing": [
+			1,
+			"never"
+		],
+		"eqeqeq": [
+			2,
+			"smart"
+		],
+		"dot-notation": [
+			1,
+			{
+				"allowKeywords": true
+			}
+		],
+		"camelcase": [
+			2,
+			{
+				"properties": "always"
+			}
+		],
+		"comma-dangle": [
+			2,
+			"never"
+		],
+		"func-style": [
+			1,
+			"declaration",
+			{
+				"allowArrowFunctions": true
+			}
+		],
+		"constructor-super": 2,
+		"array-bracket-spacing": [
+			1,
+			"never"
+		],
+		"block-scoped-var": 1,
+		"arrow-body-style": [
+			1,
+			"always"
+		],
+		"consistent-return": 1,
+		"comma-spacing": [
+			2,
+			{
+				"before": false,
+				"after": true,
+			}
+		],
+		"arrow-parens": [
+			1,
+			"as-needed"
+		],
+		"curly": 1,
+		"accessor-pairs": [
+			1,
+			{
+				"getWithoutSet": false,
+				"setWithoutGet": false
+			}
+		],
+		"brace-style": [
+			2,
+			"1tbs"
+		],
+		"callback-return": 1,
+		"comma-style": [
+			2,
+			"last"
+		],
+		"dot-location": [
+			2,
+			"property"
+		],
+		"default-case": 1,
+		"complexity": [
+			1,
+			3
+		],
+		"arrow-spacing": [
+			2,
+			{
+				"before": true,
+				"after": true
+			}
+		]
+	}
+}

@@ -1,0 +1,29 @@
+/*
+ * Generate font-faces from $font-faces
+ */
+
+for font in $font-faces
+	font-face(font.name, font.file, font.weight)
+
+
+/*
+ * Text Styles
+ */
+
+h1
+	margin 20px 0
+	font-family $font-family-marvel
+	font-size $font-size-largest
+	font-weight $font-weight-marvel-bold
+
+h2
+	@extends h1
+	font-size $font-size-large
+	font-weight $font-weight-marvel-regular
+
+p
+	margin 10px 0
+	font-size $font-size-medium
+
+small
+	font-size $font-size-small

@@ -1,0 +1,10 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Acauã Montiel -- Fullstack Developer -- @acauamontiel
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3, JavaScript
