@@ -1,9 +1,10 @@
+#!/bin/sh
 promptName() {
 	read -p 'Project name: ' NAME
 }
 
 cloneStater() {
-	git clone git@github.com:mantis-stack/mantis-starter.git $NAME && cd $NAME
+	git clone https://github.com/mantis-stack/mantis-starter.git $NAME && cd $NAME
 }
 
 setupGit() {
@@ -26,13 +27,9 @@ installDependencies() {
 	npm install && bower install
 }
 
-main() {
-	promptName
-	cloneStater
-	setupGit
-	installDependencies
+promptName
+cloneStater
+setupGit
+installDependencies
 
-	printf '\n\033[32mCompleted! \033[0m\n'
-}
-
-main
+printf '\n\033[32mCompleted!\033[0m\n'
