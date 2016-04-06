@@ -46,7 +46,7 @@
     "gulp-uglify": "^1.5.3",
     "gulp-watch": "^4.3.5",
     "mantis-equalizr": "^1.0.0",
-    "mantis-grid": "^0.4.2",
+    "mantis-grid": "^0.4.4",
     "mantis-layers": "^0.1.0",
     "mantis-querist": "^0.5.0",
     "nib": "^1.1.0",
