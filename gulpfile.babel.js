@@ -36,7 +36,7 @@ gulp.task('html', () =>
 		.pipe($.data(() => {
 			return require('./content.json');
 		}))
-		.pipe($.jade({
+		.pipe($.pug({
 			pretty: dev
 		}))
 		.pipe(gulp.dest(path.html.dest))
