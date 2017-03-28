@@ -1,6 +1,6 @@
 {
   "name": "mantis-starter",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A modern kick-starter for front-end development packed with well-chosen tools",
   "main": "gulpfile.js",
   "scripts": {
