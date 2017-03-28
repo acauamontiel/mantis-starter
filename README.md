@@ -115,6 +115,6 @@ README.md
 License
 -------
 
-© 2016 [Acauã Montiel](http://acauamontiel.com.br)
+© 2016 - 2017 [Acauã Montiel](http://acauamontiel.com.br)
 
 [MIT License](http://acaua.mit-license.org/)

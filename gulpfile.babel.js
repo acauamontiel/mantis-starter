@@ -2,7 +2,7 @@
  * Mantis Starter
  * https://github.com/mantis-stack/mantis-starter
  *
- * Copyright 2016 Acauã Montiel (@acauamontiel)
+ * Copyright 2016 - 2017 Acauã Montiel (@acauamontiel)
  * Released under the MIT license (http://acaua.mit-license.org)
  */
 
@@ -103,7 +103,10 @@ gulp.task('img', () =>
 			interlaced: true,
 			multipass: true,
 			svgoPlugins: [{
-				removeViewBox: false
+				removeUselessDefs: false,
+				removeHiddenElems: false,
+				removeViewBox: false,
+				cleanupIDs: false
 			}]
 		}))
 		.pipe(gulp.dest(path.img.dest))
@@ -152,7 +155,13 @@ gulp.task('serve', () =>
 gulp.task('watch', function () {
 	function watch (type) {
 		$.watch(path[type].watch, () => {
-			gulp.start(type);
+			var task = gulp.start(type);
+
+			if (type === 'sprite') {
+				setTimeout(function() {
+					gulp.start('html');
+				}, 1000);
+			}
 		});
 	}
 

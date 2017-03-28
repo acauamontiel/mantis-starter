@@ -1,6 +1,6 @@
 var path = {
 	src: './src/',
-	dest: './build/'
+	dest: './public/'
 };
 
 path.html = {
