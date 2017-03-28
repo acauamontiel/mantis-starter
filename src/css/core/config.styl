@@ -5,33 +5,63 @@
  * http://chir.ag/projects/name-that-color
  */
 
-$color-black = #000000
-$color-white = #ffffff
-$color-sea-green = #338656
+$color = {
+	black: #000,
+	white: #fff,
+	sea-green: #338656
+}
 
 
 /*
  * Typography
  */
 
-// Font Families
-$font-family-sans-serif = Arial, Helvetica, sans-serif
-$font-family-marvel = 'Marvel', sans-serif
+$font = {
+	// Font Names
+	alias: {
+		default: 'sans-serif',
+		alt: 'marvel'
+	},
 
-// Font Sizes
-$font-size-largest = 50px
-$font-size-large = 30px
-$font-size-medium = 16px
-$font-size-small = 13px
+	// Font Families
+	family: {
+		sans-serif: unquote('Arial, Helvetica, sans-serif'),
+		marvel: unquote('"Marvel", sans-serif')
+	},
 
-// Font Weights
-$font-weight-sans-serif-regular = normal
-$font-weight-sans-serif-bold = bold
-$font-weight-marvel-regular = 400
-$font-weight-marvel-bold = 700
+	// Font Weights
+	weight: {
+		sans-serif-regular: normal,
+		sans-serif-bold: bold,
+		marvel-regular: 400,
+		marvel-bold: 700
+	},
+
+	// Font Sizes
+	size: {
+		small: 13px,
+		medium: 16px,
+		large: 30px,
+		big: 50px
+	},
+
+	// Font Trackings
+	tracking: {
+		default: 0em,
+		near: -0.02em,
+		far: 0.02em,
+	},
+
+	// Font Leadings
+	leading: {
+		default: 1.2em,
+		near: .8em,
+		far: 1.5em
+	}
+}
 
 // Font Faces
-$font-faces = {
+$font.face = {
 	name: 'Marvel',
 	file: 'Marvel-Regular',
 	weight: $font-weight-marvel-regular
@@ -41,14 +71,30 @@ $font-faces = {
 	weight: $font-weight-marvel-bold
 }
 
+// Font Definitions
+$font.family.default = $font.family[$font.alias.default]
+$font.family.alt = $font.family[$font.alias.alt]
+$font.weight.default = $font.weight[$font.alias.default + '-regular']
+$font.weight.alt = $font.weight[$font.alias.alt + '-regular']
+
 
 /*
- * Transition Duration
+ * Transition
  */
 
-$transition = .5s
-$transition-fast = .25s
-$transition-slow = 1s
+$transition = {
+	time: {
+		default: .5s,
+	},
+
+	easing: {
+		default: 'ease',
+		inOutBack: cubic-bezier(0.68, -0.55, 0.265, 1.55)
+	}
+}
+
+$transition.time.fast = $transition.time.default / 2
+$transition.time.slow = $transition.time.default * 2
 
 
 /*
@@ -69,11 +115,3 @@ querist-init()
  */
 
 grid-init()
-
-
-/*
- * Scaffolding
- */
-
-$body-bg = $color-sea-green
-$body-color = $color-white

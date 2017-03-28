@@ -1,25 +1,68 @@
 /*
- * Generate font-faces from $font-faces
+ * Generate font-faces from $font.face
  */
 
-for font in $font-faces
-	font-face(font.name, font.file, font.weight)
+generate-font-faces(font)
+	font-face(font.name, font.file, font.weight || normal, font.style || normal, font.unicode || false)
 
+if keys($font.face)[0] is 'name'
+	generate-font-faces($font.face)
+else
+	for font in $font.face
+		generate-font-faces(font)
+
+
+/*
+ * Typography Config
+ */
+
+$type-default-font-family = $font.family.default
+$type-default-font-weight = $font.weight.default
+$type-default-bold-font-weight = $font.weight.default
+
+$type-alt-font-family = $font.family.alt
+$type-alt-font-weight = $font.weight.alt
+$type-alt-bold-font-weight = $font.weight.alt
+
+$font-size-small = $font.size.small
+$font-size-medium = $font.size.medium
+$font-size-large = $font.size.large
+$font-size-big = $font.size.big
 
 /*
  * Text Styles
  */
 
+// Types
+.type-default
+	font-family $type-default-font-family
+	font-weight $type-default-font-weight
+
+.type-default-bold
+	font-family $type-default-font-family
+	font-weight $type-default-bold-font-weight
+
+.type-alt
+	font-family $type-alt-font-family
+	font-weight $type-alt-font-weight
+
+.type-alt-bold
+	font-family $type-alt-font-family
+	font-weight $type-alt-bold-font-weight
+
+
+// General
+body
+	@extend .type-default
+
 h1
+	@extend .type-alt
 	margin 20px 0
-	font-family $font-family-marvel
-	font-size $font-size-largest
-	font-weight $font-weight-marvel-bold
+	font-size $font-size-big
 
 h2
 	@extends h1
 	font-size $font-size-large
-	font-weight $font-weight-marvel-regular
 
 p
 	margin 10px 0

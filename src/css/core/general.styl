@@ -1,4 +1,16 @@
 /*
+ * General Config
+ */
+
+$transition-default = $transition.time.default
+$transition-slow = $transition.time.slow
+$transition-fast = $transition.time.fast
+
+$body-color = $color.white
+$body-background = $color.sea-green
+
+
+/*
  * General Styles
  */
 
@@ -8,7 +20,7 @@
 
 body
 	color $body-color
-	background $body-bg url('../img/backgrounds/mantis-mobile.jpg') center center no-repeat
+	background $body-background url('../img/backgrounds/mantis-mobile.jpg') center center no-repeat
 	background-size cover
 
 	@media $from.lg
