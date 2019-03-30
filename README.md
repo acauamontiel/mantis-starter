@@ -33,24 +33,24 @@ You can run the app locally by [Gulp](http://gulpjs.com)
 
 ### Available Gulp commands
 
-#### Default - `gulp`
+#### Default - `gulp` or `npm start`
 
 Run `gulp` to compile and watch files running on [localhost:3000](http://localhost:3000)
 
 
-#### Build - `gulp build`
+#### Build - `gulp build` or `npm run build`
 
 Run `gulp build` to only compile files
 
 
-#### Dist - `gulp dist`
+#### Dist - `gulp dist` or `npm run dist`
 
 Run `gulp dist` to compile, optimize and minify files
 
 
-#### Clean - `gulp clean`
+#### Clean - `gulp clean` or `npm run clean`
 
-Run `gulp clean` to delete the `build/` folder (same as `rm -rf build`)
+Run `gulp clean` to delete the `public/` folder (same as `rm -rf build`)
 
 
 Structure
@@ -88,13 +88,18 @@ src/
 │   ├── sprite/
 │   │   └── *.svg
 │   └── *.{jpg|png|svg}
-└── js/
-    ├── app/
-    │   ├── index.js
+├── js/
+│   ├── app/
+│   │   ├── index.js
+│   │   └── *.js
+│   ├── modules/
+│   │   └── *.js
+│   └── app.js
+└── gulpfile.babel.js/
+    ├── tasks/
     │   └── *.js
-    ├── modules/
-    │   └── *.js
-    └── app.js
+    ├── index.js
+    └── paths.js
 .babelrc
 .bowerrc
 .editorconfig
@@ -103,8 +108,6 @@ src/
 .gitignore
 bower.json
 content.json
-gulpfile.babel.js
-gulpfile.paths.js
 logo.png
 logo.svg
 package.json
@@ -115,6 +118,6 @@ README.md
 License
 -------
 
-© 2016 - 2017 [Acauã Montiel](http://acauamontiel.com.br)
+© 2016 - 2019 [Acauã Montiel](http://acauamontiel.com.br)
 
 [MIT License](http://acaua.mit-license.org/)
