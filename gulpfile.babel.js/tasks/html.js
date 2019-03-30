@@ -1,6 +1,6 @@
 import {src, dest} from 'gulp';
-import pug from 'gulp-pug';
 import plumber from 'gulp-plumber';
+import pug from 'gulp-pug';
 import {html} from '../paths';
 import content from '../../content.json';
 import {reload} from './serve';

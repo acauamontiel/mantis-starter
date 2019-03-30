@@ -1,10 +1,12 @@
 import {watch, series} from 'gulp';
 import * as path from '../paths';
 import htmlTask from './html';
+import cssTask from './css';
 import copyTask from './copy';
 
 const tasks = {
 	html: htmlTask,
+	css: cssTask,
 	copy: copyTask
 };
 

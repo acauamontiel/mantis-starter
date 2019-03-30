@@ -33,9 +33,12 @@
     "gulp-newer": "^1.4.0",
     "gulp-plumber": "^1.2.1",
     "gulp-pug": "^4.0.1",
+    "gulp-stylus": "^2.7.0",
+    "mantis-equalizr": "^1.4.0",
     "mantis-grid": "^0.4.4",
     "mantis-layers": "^0.1.0",
     "mantis-querist": "^0.5.0",
+    "nib": "^1.1.2",
     "rimraf": "^2.6.3"
   }
 }
