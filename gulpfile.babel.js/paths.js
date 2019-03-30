@@ -9,13 +9,13 @@ const src = './src/',
 
 	css = {
 		watch: `${src}css/**/*.styl`,
-		src: `${src}css/style.styl`,
+		src: `${src}css/*.styl`,
 		dest: `${dest}css/`
 	},
 
 	js = {
 		watch: `${src}js/**/*.js`,
-		src: `${src}js/app.js`,
+		src: `${src}js/*.js`,
 		dest: `${dest}js/`
 	},
 

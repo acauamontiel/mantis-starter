@@ -5,7 +5,7 @@ import rename from 'gulp-rename';
 import {sprite} from '../paths';
 import {reload} from './serve';
 
-export default function htmlTask (done) {
+export default function spriteTask (done) {
 	src(sprite.src)
 		.pipe(plumber())
 		.pipe(svgSymbols({

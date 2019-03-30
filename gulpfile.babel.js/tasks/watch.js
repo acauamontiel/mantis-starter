@@ -2,6 +2,7 @@ import {watch, series} from 'gulp';
 import * as path from '../paths';
 import htmlTask from './html';
 import cssTask from './css';
+import jsTask from './js';
 import imgTask from './img';
 import spriteTask from './sprite';
 import copyTask from './copy';
@@ -9,6 +10,7 @@ import copyTask from './copy';
 const tasks = {
 	html: htmlTask,
 	css: cssTask,
+	js: jsTask,
 	img: imgTask,
 	sprite: spriteTask,
 	copy: copyTask

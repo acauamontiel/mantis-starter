@@ -10,7 +10,7 @@ import {prod} from '../index';
 import {css} from '../paths';
 import {stream} from './serve';
 
-export default function htmlTask (done) {
+export default function cssTask (done) {
 	src(css.src)
 		.pipe(plumber())
 		.pipe(stylus({

@@ -4,7 +4,7 @@ import imagemin from 'gulp-imagemin';
 import {img} from '../paths';
 import {reload} from './serve';
 
-export default function htmlTask (done) {
+export default function imgTask (done) {
 	src(img.src)
 		.pipe(newer(img.dest))
 		.pipe(imagemin([
