@@ -1,8 +1,9 @@
 import {src, dest} from 'gulp';
-import {html} from '../paths.js';
 import pug from 'gulp-pug';
 import plumber from 'gulp-plumber';
+import {html} from '../paths';
 import content from '../../content.json';
+import {reload} from './serve';
 
 export default function htmlTask (done) {
 	src(html.src)
@@ -11,7 +12,8 @@ export default function htmlTask (done) {
 			pretty: !JSON.parse(process.env.PRODUCTION),
 			locals: content
 		}))
-		.pipe(dest(html.dest));
+		.pipe(dest(html.dest))
+		.on('end', reload);
 
 	done();
 };
