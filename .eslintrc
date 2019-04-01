@@ -7,9 +7,6 @@
 		"$": true,
 		"Mantis": true
 	},
-	"ecmaFeatures": {
-		"modules": true
-	},
 	"parser": "babel-eslint",
 	"rules": {
 		"eol-last": [
