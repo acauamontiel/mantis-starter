@@ -1,7 +1,8 @@
 import {src, dest} from 'gulp';
 import eslint from 'gulp-eslint';
 import bro from 'gulp-bro';
-import sourcemaps from 'gulp-sourcemaps';
+import gif from 'gulp-if';
+import uglify from 'gulp-uglify';
 import babelify from 'babelify';
 import {prod} from '../index';
 import {js} from '../paths';
@@ -15,13 +16,12 @@ export default function jsTask (done) {
 	}
 
 	src(js.src)
-		.pipe(sourcemaps.init({loadMaps: true}))
 		.pipe(bro({
 			transform: [
 				babelify.configure()
 			]
 		}))
-		.pipe(sourcemaps.write())
+		.pipe(gif(prod, uglify()))
 		.pipe(dest(js.dest))
 		.on('end', reload);
 
