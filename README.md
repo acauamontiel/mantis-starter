@@ -43,11 +43,6 @@ Run `gulp` to compile and watch files running on [localhost:3000](http://localho
 Run `gulp build` to only compile files
 
 
-#### Dist - `gulp dist` or `npm run dist`
-
-Run `gulp dist` to compile, optimize and minify files
-
-
 #### Clean - `gulp clean` or `npm run clean`
 
 Run `gulp clean` to delete the `public/` folder (same as `rm -rf build`)
@@ -103,6 +98,7 @@ src/
 .babelrc
 .bowerrc
 .editorconfig
+.env
 .eslintrc
 .gitattributes
 .gitignore

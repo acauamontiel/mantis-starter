@@ -1,4 +1,19 @@
 {
 	"title": "Mantis Starter",
-	"description": "A modern kick-starter for front-end development packed with well-chosen tools"
+	"description": "A modern kick-starter for front-end development packed with well-chosen tools",
+	"tags": [
+		["gulp", "https://gulpjs.com"],
+		["pug", "https://pugjs.org"],
+		["stylus", "http://stylus-lang.com"],
+		["babel", "https://babeljs.io"],
+		["browserify", "http://browserify.org"],
+		["browsersync", "https://browsersync.io"],
+		["uglify", "https://www.npmjs.com/package/gulp-uglify"],
+		["imagemin", "https://www.npmjs.com/package/gulp-imagemin"],
+		["svg-sprite", "https://www.npmjs.com/package/gulp-svg-symbols"],
+		["flexbox-grid", "http://mantis-stack.github.io/mantis-grid"],
+		["responsive", "https://github.com/mantis-stack/mantis-querist"],
+		["smart-layers", "https://github.com/mantis-stack/mantis-layers"],
+		["equalizr", "https://github.com/mantis-stack/mantis-equalizr"]
+	]
 }
