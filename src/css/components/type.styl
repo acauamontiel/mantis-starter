@@ -34,34 +34,34 @@ $font-size-big = $font.size.big
  */
 
 // Types
-.type-default
+$type-default
 	font-family $type-default-font-family
 	font-weight $type-default-font-weight
 
-.type-default-bold
+$type-default-bold
 	font-family $type-default-font-family
 	font-weight $type-default-bold-font-weight
 
-.type-alt
+$type-alt
 	font-family $type-alt-font-family
 	font-weight $type-alt-font-weight
 
-.type-alt-bold
+$type-alt-bold
 	font-family $type-alt-font-family
 	font-weight $type-alt-bold-font-weight
 
 
 // General
 body
-	@extend .type-default
+	@extend $type-default
 
 h1
-	@extend .type-alt
+	@extend $type-alt
 	margin 30px 0
 	font-size $font-size-big
 
 h2
-	@extends h1
+	@extend h1
 	font-size $font-size-large
 
 p

@@ -16,6 +16,7 @@ $color = {
  * Typography
  */
 
+// @stylint off
 $font = {
 	// Font Names
 	alias: {
@@ -76,12 +77,14 @@ $font.family.default = $font.family[$font.alias.default]
 $font.family.alt = $font.family[$font.alias.alt]
 $font.weight.default = $font.weight[$font.alias.default + '-regular']
 $font.weight.alt = $font.weight[$font.alias.alt + '-regular']
+// @stylint on
 
 
 /*
  * Transition
  */
 
+// @stylint off
 $transition = {
 	time: {
 		default: .5s,
@@ -95,6 +98,7 @@ $transition = {
 
 $transition.time.fast = $transition.time.default / 2
 $transition.time.slow = $transition.time.default * 2
+// @stylint on
 
 
 /*

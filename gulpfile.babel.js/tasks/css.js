@@ -1,5 +1,6 @@
 import {src, dest} from 'gulp';
 import plumber from 'gulp-plumber';
+import stylint from 'gulp-stylint';
 import stylus from 'gulp-stylus';
 import nib from 'nib';
 import equalizr from 'mantis-equalizr';
@@ -11,6 +12,10 @@ import {css} from '../paths';
 import {stream} from './serve';
 
 export default function cssTask (done) {
+	src(css.watch)
+		.pipe(stylint())
+		.pipe(stylint.reporter());
+
 	src(css.src)
 		.pipe(plumber())
 		.pipe(stylus({

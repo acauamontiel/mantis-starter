@@ -99,6 +99,7 @@ parent()
  * Placeholder Mixin
  */
 
+// @stylint off
 placeholder()
 	&::-webkit-input-placeholder
 		{block}
@@ -108,14 +109,17 @@ placeholder()
 		{block}
 	&:-ms-input-placeholder
 		{block}
+// @stylint on
 
 
 /*
  * Placeholder Mixin
  */
 
+// @stylint off
 selection()
 	&::selection
 		{block}
 	&::-moz-selection
 		{block}
+// @stylint on
