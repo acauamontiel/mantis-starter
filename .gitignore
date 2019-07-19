@@ -46,6 +46,7 @@ jspm_packages
 # Optional npm cache directory
 .npm
 package-lock.json
+*.lock
 
 # Optional REPL history
 .node_repl_history

@@ -31,5 +31,6 @@ promptName
 cloneStater
 setupGit
 installDependencies
+rm -rfv install.sh
 
 printf '\n\033[32mCompleted!\033[0m\n'
