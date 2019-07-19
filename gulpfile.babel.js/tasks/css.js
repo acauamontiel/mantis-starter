@@ -12,9 +12,11 @@ import {css} from '../paths';
 import {stream} from './serve';
 
 export default function cssTask (done) {
-	src(css.watch)
-		.pipe(stylint())
-		.pipe(stylint.reporter());
+	if (!prod) {
+		src(css.watch)
+			.pipe(stylint())
+			.pipe(stylint.reporter());
+	}
 
 	src(css.src)
 		.pipe(plumber())
