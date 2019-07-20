@@ -38,6 +38,7 @@
     "gulp-newer": "^1.4.0",
     "gulp-plumber": "^1.2.1",
     "gulp-pug": "^4.0.1",
+    "gulp-pug-linter": "^1.2.1",
     "gulp-rename": "^1.4.0",
     "gulp-sourcemaps": "^2.6.5",
     "gulp-stylint": "^4.0.2",
@@ -49,6 +50,7 @@
     "mantis-layers": "^0.1.0",
     "mantis-querist": "^0.5.0",
     "nib": "^1.1.2",
+    "puglint-stylish": "^1.0.1",
     "rimraf": "^2.6.3"
   }
 }

@@ -1,6 +1,7 @@
 {
 	"title": "Mantis Starter",
 	"description": "A modern kick-starter for front-end development packed with well-chosen tools",
+	"url": "https://github.com/mantis-stack/mantis-starter",
 	"tags": [
 		["gulp", "https://gulpjs.com"],
 		["pug", "https://pugjs.org"],

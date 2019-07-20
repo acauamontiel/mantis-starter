@@ -3,11 +3,20 @@ extends layouts/default
 block content
 	main.grid
 		section.grid__item-sm
-			h1= title
-			h2= description
+			h1=title
+			h2=description
 
 			p
 				each tag in tags
-					a.tag(href=tag[1], target='_blank')= `#${tag[0]}`
+					a.tag(title=tag[0], href=tag[1], target='_blank')=`#${tag[0]}`
 
-			p #[+icon('github')] #[small See #[u #[a(href="https://github.com/mantis-stack/mantis-starter", target="_blank") Mantis Starter on GitHub]]].
+			p
+				+icon('github')
+				|&nbsp;
+				small See
+					u
+						a(
+							title=title,
+							href=url,
+							target='_blank'
+						) Mantis Starter on GitHub.
