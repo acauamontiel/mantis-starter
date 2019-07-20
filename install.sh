@@ -4,7 +4,7 @@ promptName() {
 }
 
 cloneStater() {
-	git clone https://github.com/mantis-stack/mantis-starter.git $NAME && cd $NAME
+	git clone https://github.com/acauamontiel/mantis-starter.git $NAME && cd $NAME
 }
 
 setupGit() {

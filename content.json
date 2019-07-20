@@ -1,7 +1,7 @@
 {
 	"title": "Mantis Starter",
 	"description": "A modern kick-starter for front-end development packed with well-chosen tools",
-	"url": "https://github.com/mantis-stack/mantis-starter",
+	"url": "https://github.com/acauamontiel/mantis-starter",
 	"tags": [
 		["gulp", "https://gulpjs.com"],
 		["pug", "https://pugjs.org"],
@@ -12,9 +12,9 @@
 		["uglify", "https://www.npmjs.com/package/gulp-uglify"],
 		["imagemin", "https://www.npmjs.com/package/gulp-imagemin"],
 		["svg-sprite", "https://www.npmjs.com/package/gulp-svg-symbols"],
-		["flexbox-grid", "http://mantis-stack.github.io/mantis-grid"],
-		["responsive", "https://github.com/mantis-stack/mantis-querist"],
-		["smart-layers", "https://github.com/mantis-stack/mantis-layers"],
-		["equalizr", "https://github.com/mantis-stack/mantis-equalizr"]
+		["flexbox-grid", "http://acauamontiel.github.io/mantis-grid"],
+		["responsive", "https://github.com/acauamontiel/mantis-querist"],
+		["smart-layers", "https://github.com/acauamontiel/mantis-layers"],
+		["equalizr", "https://github.com/acauamontiel/mantis-equalizr"]
 	]
 }

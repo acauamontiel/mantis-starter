@@ -13,12 +13,12 @@ First of all, you need to have installed [Node.js](http://nodejs.org/) and [Gulp
 Then you can install by running the following command in your terminal:
 
 ```shell
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/mantis-stack/mantis-starter/master/install.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/acauamontiel/mantis-starter/master/install.sh)"
 ```
 
 Otherwise you can install *"manually"* doing the following steps:
 
-- Clone the repo: `git clone git@github.com:mantis-stack/mantis-starter.git my-project`
+- Clone the repo: `git clone git@github.com:acauamontiel/mantis-starter.git my-project`
 - Enter the folder: `cd my-project`
 - Install Node dependencies: `npm install`
 - Finally install Bower components: `bower install`
