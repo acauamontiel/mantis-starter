@@ -1,12 +1,9 @@
 export default function (callback) {
 	if (document.readyState === 'complete') {
-		callback.bind(this);
+		callback();
+
 		return;
 	}
 
-	document.addEventListener(
-		'DOMContentLoaded',
-		callback.bind(this),
-		false
-	);
+	document.addEventListener('DOMContentLoaded', callback(), false);
 }
