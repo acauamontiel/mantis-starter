@@ -9,7 +9,7 @@ Mantis Starter
 Get started
 -----------
 
-First of all, you need to have installed [Node.js](http://nodejs.org/) and [Gulp](http://gulpjs.com) globally.
+First of all, you need to have installed [Node.js](http://nodejs.org/) globally.
 Then you can install by running the following command in your terminal:
 
 ```shell
@@ -20,8 +20,7 @@ Otherwise you can install *"manually"* doing the following steps:
 
 - Clone the repo: `git clone git@github.com:acauamontiel/mantis-starter.git my-project`
 - Enter the folder: `cd my-project`
-- Install Node dependencies: `npm install`
-- Finally install Bower components: `bower install`
+- Install Node dependencies: `yarn` or `npm install`
 
 But I recommend you to install the easiest way.
 
@@ -29,23 +28,23 @@ But I recommend you to install the easiest way.
 Running
 -------
 
-You can run the app locally by [Gulp](http://gulpjs.com)
+You can run the app locally by running these following commands:
 
 ### Available Gulp commands
 
-#### Default - `gulp` or `npm start`
+#### Default - `yarn start` or `npm start`
 
-Run `gulp` to compile and watch files running on [localhost:3000](http://localhost:3000)
-
-
-#### Build - `gulp build` or `npm run build`
-
-Run `gulp build` to only compile files
+Run this commnad to compile and watch files running on [localhost:3000](http://localhost:3000)
 
 
-#### Clean - `gulp clean` or `npm run clean`
+#### Build - `yarn run build` or `npm run build`
 
-Run `gulp clean` to delete the `public/` folder (same as `rm -rf build`)
+Run this command to only compile files
+
+
+#### Clean - `yarn run clean` or `npm run clean`
+
+Run this command to delete the `public/` folder (same as `rm -rf public`)
 
 
 Structure
@@ -54,9 +53,13 @@ Structure
 When you have all installed, the structure will look like this:
 
 ```
+gulpfile.babel.js/
+├── tasks/
+│   └── *.js
+├── index.js
+└── paths.js
 node_modules/
 src/
-├── dependencies/
 ├── copy/
 │   ├── fonts/
 │   │   └── *.{eot|svg|ttf|woff}
@@ -67,14 +70,14 @@ src/
 │   ├── core/
 │   │   └── *.styl
 │   └── style.styl
-├── fonts/
-│   └── *.{eot|svg|ttf|woff}
 ├── html/
-│   ├── incs/
-│   │   └── *.jade
+│   ├── components/
+│   │   └── *.pug
+│   ├── includes/
+│   │   └── *.pug
 │   ├── layouts/
-│   │   └── *.jade
-│   └── index.jade
+│   │   └── *.pug
+│   └── index.pug
 ├── img/
 │   ├── backgrounds/
 │   │   └── *.{jpg|png|svg}
@@ -90,20 +93,16 @@ src/
 │   ├── modules/
 │   │   └── *.js
 │   └── app.js
-└── gulpfile.babel.js/
-    ├── tasks/
-    │   └── *.js
-    ├── index.js
-    └── paths.js
 .babelrc
-.bowerrc
 .editorconfig
 .env
 .eslintrc
 .gitattributes
 .gitignore
-bower.json
+.pug-lintrc
+.stylintrc
 content.json
+install.sh
 logo.png
 logo.svg
 package.json

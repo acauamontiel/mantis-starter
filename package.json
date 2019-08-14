@@ -1,6 +1,6 @@
 {
   "name": "mantis-starter",
-  "version": "2.4.1",
+  "version": "2.4.2",
   "description": "A modern kick-starter for front-end development packed with well-chosen tools",
   "main": "gulpfile.babel.js",
   "scripts": {
@@ -30,7 +30,7 @@
     "babelify": "^10.0.0",
     "browser-sync": "^2.26.3",
     "dotenv": "^7.0.0",
-    "eslint-config-mantis": "^1.2.1",
+    "eslint-config-mantis": "^1.2.2",
     "gulp": "^4.0.0",
     "gulp-bro": "^1.0.3",
     "gulp-eslint": "^5.0.0",

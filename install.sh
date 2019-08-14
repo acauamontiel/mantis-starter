@@ -24,7 +24,7 @@ setupGit() {
 }
 
 installDependencies() {
-	npm install && bower install
+	npm install
 }
 
 promptName
