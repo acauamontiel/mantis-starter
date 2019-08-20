@@ -47,7 +47,7 @@
     "gulp-svg-symbols": "^3.2.3",
     "gulp-uglify": "^3.0.2",
     "mantis-equalizr": "^1.4.0",
-    "mantis-grid": "^0.4.4",
+    "mantis-grid": "^0.5.1",
     "mantis-layers": "^0.1.0",
     "mantis-querist": "^0.5.0",
     "nib": "^1.1.2",
