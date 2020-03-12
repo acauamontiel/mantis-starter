@@ -3,7 +3,7 @@
  */
 
 generate-font-faces(font)
-	font-face(font.name, font.file, font.weight || normal, font.style || normal, font.unicode || false)
+	font-face(font.name, font.file, font.weight || normal, font.style || normal)
 
 if keys($font.face)[0] is 'name'
 	generate-font-faces($font.face)
@@ -57,11 +57,13 @@ body
 
 h1
 	@extend $type-alt
+
 	margin 30px 0
 	font-size $font-size-big
 
 h2
 	@extend h1
+
 	font-size $font-size-large
 
 p

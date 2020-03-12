@@ -2,11 +2,13 @@ import {src, dest} from 'gulp';
 import plumber from 'gulp-plumber';
 import stylint from 'gulp-stylint';
 import stylus from 'gulp-stylus';
-import nib from 'nib';
+import toolkit from 'mantis-toolkit';
 import equalizr from 'mantis-equalizr';
 import querist from 'mantis-querist';
 import grid from 'mantis-grid';
 import layers from 'mantis-layers';
+import postcss from 'gulp-postcss';
+import autoprefixer from 'autoprefixer';
 import {prod} from '../index';
 import {css} from '../paths';
 import {stream} from './serve';
@@ -22,7 +24,7 @@ export default function cssTask (done) {
 		.pipe(plumber())
 		.pipe(stylus({
 			use: [
-				nib(),
+				toolkit(),
 				equalizr(),
 				querist(),
 				grid(),
@@ -32,6 +34,7 @@ export default function cssTask (done) {
 			linenos: !prod,
 			errors: true
 		}))
+		.pipe(postcss([autoprefixer()]))
 		.pipe(dest(css.dest))
 		.pipe(stream());
 

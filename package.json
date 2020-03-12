@@ -20,12 +20,18 @@
     "scaffold",
     "starter"
   ],
+  "browserslist": [
+    "last 2 version",
+    "> 1%",
+    "IE 10"
+  ],
   "author": "Acauã Montiel <contato@acauamontiel.com.br>",
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.4.0",
     "@babel/preset-env": "^7.4.2",
     "@babel/register": "^7.4.0",
+    "autoprefixer": "^9.7.4",
     "babel-eslint": "^10.0.1",
     "babelify": "^10.0.0",
     "browser-sync": "^2.26.3",
@@ -38,6 +44,7 @@
     "gulp-imagemin": "^5.0.3",
     "gulp-newer": "^1.4.0",
     "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
     "gulp-pug": "^4.0.1",
     "gulp-pug-linter": "^1.2.1",
     "gulp-rename": "^1.4.0",
@@ -46,10 +53,11 @@
     "gulp-stylus": "^2.7.0",
     "gulp-svg-symbols": "^3.2.3",
     "gulp-uglify": "^3.0.2",
-    "mantis-equalizr": "^1.4.0",
+    "mantis-equalizr": "^1.5.0",
     "mantis-grid": "^0.5.1",
     "mantis-layers": "^0.1.0",
     "mantis-querist": "^0.5.0",
+    "mantis-toolkit": "^0.1.1",
     "nib": "^1.1.2",
     "puglint-stylish": "^1.0.1",
     "rimraf": "^2.6.3"

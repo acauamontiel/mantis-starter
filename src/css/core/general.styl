@@ -14,17 +14,18 @@ $body-background = $color.sea-green
  * General Styles
  */
 
-+selection()
+::selection
 	color $body-color
-	background $body-bg
+	background $body-background
 
+// @stylint off
 body
 	color $body-color
-	background $body-background url('../img/backgrounds/mantis-mobile.jpg') center center no-repeat
+	background $body-background urlBg('mantis-mobile.jpg') center center no-repeat
 	background-size cover
 
 	@media $from.lg
-		background-image url('../img/backgrounds/mantis.jpg')
+		background-image urlBg('mantis.jpg')
 
 h1
 	animation $transition-slow fadeInRight
@@ -34,6 +35,7 @@ h2
 
 p
 	animation $transition-slow fadeInUp
+// @stylint on
 
 .tag
 	display inline-block
