@@ -56,7 +56,7 @@
     "mantis-grid": "^0.5.1",
     "mantis-layers": "^0.1.0",
     "mantis-querist": "^0.5.0",
-    "mantis-toolkit": "^0.1.1",
+    "mantis-toolkit": "^0.2.0",
     "puglint-stylish": "^1.0.1",
     "rimraf": "^2.6.3"
   }
